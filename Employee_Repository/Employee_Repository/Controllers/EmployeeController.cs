@@ -40,5 +40,44 @@ namespace Employee_Repository.Controllers
                 return View();
             }
         }
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            IUnitOfWork iu = new UnitOfWork(new EmpContext());
+            Employee e = iu.Employees.Find(c => c.EmployeeID == id).FirstOrDefault();
+            return View(e);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Employee e)
+        {
+            if (ModelState.IsValid)
+            {
+                IUnitOfWork iu = new UnitOfWork(new EmpContext());
+                iu.Employees.Modify(e);
+                iu.Complete();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+        }
+        public ActionResult Delete(int id)
+        {
+            IUnitOfWork iu = new UnitOfWork(new EmpContext());
+            Employee e = iu.Employees.Find(c => c.EmployeeID == id).FirstOrDefault();
+            iu.Employees.Remove(e);
+            iu.Complete();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Details(int id)
+        {
+            IUnitOfWork iu = new UnitOfWork(new EmpContext());
+            Employee e = iu.Employees.Find(c => c.EmployeeID == id).FirstOrDefault();
+            return View(e);
+        }
+
     }
 }

@@ -7,13 +7,13 @@ namespace Employee_Repository.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class InitialBD : IMigrationMetadata
+    public sealed partial class initialDataBase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialBD));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialDataBase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202003291456158_InitialBD"; }
+            get { return "202003300724381_initialDataBase"; }
         }
         
         string IMigrationMetadata.Source

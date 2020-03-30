@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialBD : DbMigration
+    public partial class initialDataBase : DbMigration
     {
         public override void Up()
         {
@@ -13,8 +13,8 @@
                     {
                         EmployeeID = c.Int(nullable: false, identity: true),
                         FirstName = c.String(nullable: false, maxLength: 20),
-                        MiddleName = c.String(),
-                        LastName = c.String(nullable: false),
+                        MiddleName = c.String(maxLength: 20),
+                        LastName = c.String(nullable: false, maxLength: 20),
                         Gender = c.String(nullable: false),
                         Address = c.String(nullable: false),
                         City = c.String(nullable: false),

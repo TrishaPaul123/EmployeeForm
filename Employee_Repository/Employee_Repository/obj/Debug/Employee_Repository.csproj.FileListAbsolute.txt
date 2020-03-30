@@ -81,5 +81,5 @@ C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debu
 C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debug\Employee_Repository.csproj.CopyComplete
 C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debug\Employee_Repository.dll
 C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debug\Employee_Repository.pdb
-C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debug\Employee_Repository.Migrations.InitialBD.resources
+C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debug\Employee_Repository.Migrations.initialDataBase.resources
 C:\Users\trish\Desktop\EntityFW\Employee_Repository\Employee_Repository\obj\Debug\Employee_Repository.csproj.GenerateResource.cache
